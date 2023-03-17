@@ -1,5 +1,5 @@
 # OTA solution guide for Mini Pupper 2
-Target: Build OTA soluiton in order to make it easy for users to upgrade Mini Pupper 2 MCU software.
+Target: Build OTA solution in order to make it easy for users to upgrade Mini Pupper 2 MCU software.
 
 Technical architecture: [Amazon S3 + Amazon CloudFront](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/)
 
@@ -31,7 +31,7 @@ pip install git+https://github.com/hdumcke/aws-orchestrator@main#egg=aws-orchest
 
 Import a key pair with the name 'aws-orchestrator' and add your public key
 
-Add your private key to the cloud shell. Attention, this provides a secirity risk and you should remove the file when you are done
+Add your private key to the cloud shell. Attention, this provides a security risk and you should remove the file when you are done
 
 mkdir ~/.ssh
 vi ~/.ssh/id_rsa # paste your private key
@@ -61,7 +61,7 @@ Copy mini_pupper_app.bin from EC2 instance to cloud shell
 scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no ubuntu@<ip addr from aws-list>:mini_pupper_app.bin .
 ```
 
-Upload mini_pupper_app.bin from your cloud shell to OTA servoer
+Upload mini_pupper_app.bin from your cloud shell to OTA server
 
 ```sh
 scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no mini_pupper_app.bin ubuntu@ota.mangdang.net:
