@@ -53,7 +53,7 @@ aws-list ~/aws-orchestrator-configurations/mp_v2_esp_build/config.yaml
 #use this IP address for scp
 ```
 
-# Upload mini_pupper_app.bin to OTA servoer
+# Upload mini_pupper_app.bin to OTA server
 
 Copy mini_pupper_app.bin from EC2 instance to cloud shell
 
