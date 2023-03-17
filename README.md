@@ -33,9 +33,11 @@ Import a key pair with the name 'aws-orchestrator' and add your public key
 
 Add your private key to the cloud shell. Attention, this provides a security risk and you should remove the file when you are done
 
+```sh
 mkdir ~/.ssh
 vi ~/.ssh/id_rsa # paste your private key
 chmod 400 ~/.ssh/id_rsa
+```
 
 # Deploy AWS EC2 build instance
 
